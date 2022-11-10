@@ -42,7 +42,7 @@ The **field of Data Engineering involves**:
     - PostgreSQL
 - NoSOL:
     - Redis, MongoDB,
-    - Cassandra, Ne04J
+    - Cassandra, Ne04J, HBase (Wide column stores)
 - Data Warehouses:
     - Oracle Exadata, IBM
     - Db2 Warehouse on Cloud,
@@ -54,10 +54,33 @@ The **field of Data Engineering involves**:
     - AirFlow
     - DataFLow
 
-- ETL Tools
+- ETL Tools Methodologies
     - IBM Infosphere
     - AWS (Amazon)
     - improvado
+
+- Data Lakes
+
+- Languages
+    - Query languages
+        - SQL for relational databases and 
+        - SQL-like query languages for NoSQL databases
+        
+    - Programming languages
+        - Python, R, Java
+        
+    - Shell and Scripting languages
+        - Unix/Linux Shell and PowerShell
+        
+    - Big Data Processing Tools
+        - Hadoop (for Big Data)
+        - HIVE
+        - Spark Apache
+        
+## Pipeline
+
+![db_0](img/db_0.jpg "db_0")
+        
 
 # Refernce
 - https://www.coursera.org/specializations/data-engineering-foundations
