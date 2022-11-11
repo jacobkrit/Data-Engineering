@@ -53,7 +53,7 @@ The **field of Data Engineering involves**:
        
 # Data
 
-**Data Forms**:
+### **Data Forms**:
 - Structured
     - Data that follows a rigid format and can be organized into rows and columns.
         - SQL Databases
@@ -81,7 +81,7 @@ The **field of Data Engineering involves**:
        - NoSQL
        - Analysis tools
 
-**Standard File Formats**:
+### **Standard File Formats**:
 1. Delimited text file formats, or .CSV 
     - Delimiter - A sequence of one or more characters for specifying the boundary between independent entities or values (Comma, Tab, Colon, Vertical Bar, Space).
 2. Microsoft Excel Open .XML Spreadsheet, or .XLSX
