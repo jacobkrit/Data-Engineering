@@ -1,5 +1,3 @@
-
-
 # Docker
 
 A developer builds an application and sends it to the tester. But, the environments of development and testing systems are different; thus, the code does not work. There are two solutions to this: Docker and Virtual Machines, but Docker is far better in terms of performance, scaling, and efficiency.   
