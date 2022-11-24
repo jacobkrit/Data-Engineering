@@ -199,6 +199,13 @@ The **field of Data Engineering involves**:
     - Saving time in defining structures, schemas, and transformations (data is imported in its original format)
     - Ability to repurpose data in several different ways and wide-ranging use cases
 
+## Data Modeling 
+- https://www.youtube.com/watch?v=IdCmMkQLvGA
+    - Normalized Modeling
+    - Denormalized Modeling
+    - Data Vault 2.0
+    - One-Big-Table (OBT)
+
 ## **Types of Data Transformation and Storage:**
 
 - ETL Tools Methodologies:
