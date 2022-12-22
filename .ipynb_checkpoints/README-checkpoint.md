@@ -361,7 +361,6 @@ A secure data strategy is a layered approach. It includes access control, multiz
 
 
 
-
 # Refernce
 - https://www.coursera.org/specializations/data-engineering-foundations
 
