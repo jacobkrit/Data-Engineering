@@ -11,6 +11,8 @@ Container isolates the application and its dependencies into a self-contained un
 A container is a runnable instance of an image. An image is a read-only template with instructions for creating a Docker container. You can create, start, stop, move, or delete a container using the Docker API or CLI. One can connect a single container to one or more networks and can also attach storage to it. A new image can also be created based on the current state of the container. Containers can be shared thereby ensuring that everyone who communicates with it will get the same container and that works in the same way.    
 
 
+https://docs.docker.com/engine/install/debian/
+
 
 ## Basic Docker Commands
 
@@ -53,6 +55,54 @@ A container is a runnable instance of an image. An image is a read-only template
 
 `- p[Host Port Number]:[Binding Port Number]`
 - Bind port of your host (port of the host <-- port which you exernaly send requests) to the container (port of tha you are binding this). **Port**: specifies on which port the container is listening to the incomming request. example: `docker run -p6000:6379 [IMAGE_NAME]`
+
+## Docker Installation --------------------
+1. Check the OS in Linux with `whoami` command
+2. From the following list ([Docker Installation](https://docs.docker.com/engine/install/))select the respective OS
+3. For Debian OS follow the [Docker Debian Installation](https://docs.docker.com/engine/install/debian/#install-using-the-repository):
+    
+``` 
+sudo apt-get update
+``` 
+    
+``` 
+sudo apt-get install \
+    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release        
+```
+
+```
+sudo mkdir -m 0755 -p /etc/apt/keyrings
+```
+
+```
+curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+```
+
+```
+echo \
+    "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian \
+    $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+```
+
+
+```
+sudo apt-get update
+```
+    
+```
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+```
+
+```
+sudo docker run hello-world
+```
+
+4. Start Execute the Basic Docker commands such as `docker ps`, however you need SUDO rights, so either you execute everything as with SUDO or you: [Manage Docker as a non-root user](https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user) by creating a Unix group called docker and add users to it. To run Docker without root privileges: 
+
+
 
 
 ## Docker & Mongo
